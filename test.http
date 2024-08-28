@@ -1,0 +1,13 @@
+@root = http://localhost:5052
+
+### Get unrelated resource which should match the /tiles/{**path} route -- Fails
+GET {{root}}/api/tiles/function_one_two?partnerId=213456
+
+### Get unrelated resource which should match the /tiles/{**path} route
+GET {{root}}/api/tiles/x/y/z
+
+### Get js
+GET {{root}}/api/partner1/test.js
+
+### Get js
+GET {{root}}/api/partner3/test.js
